@@ -12,7 +12,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
+    background-color: aqua;
+    color: white;
 }
 
 .hamburger {
