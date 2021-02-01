@@ -31,3 +31,7 @@ header {
     display: none;
 }
 
+.wrapper {
+    margin: 0 5vw;
+}
+
