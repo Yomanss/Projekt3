@@ -17,18 +17,23 @@ header {
     color: white;
 }
 
-.hamburger {
+.navList {
     list-style: none;
-}
-
-.menyOn {
     display: flex;
-    flex-direction: column;
-    list-style: none;
 }
 
-.invisible {
-    display: none;
+.navList li {
+    margin: 0.5rem;
+}
+
+.navList li:last-child {
+    margin-right: 1rem;
+}
+
+.navList li a{
+    font-size: 1.5rem;
+    color:#fff;
+    text-decoration: none;
 }
 
 .wrapper {
