@@ -2,11 +2,15 @@
 
 let convertFrom = document.querySelector("[data-conversion-from]");
 let numberInput = document.querySelector("[data-number-input]");
-let conversionResult = document.querySelector(".result");
+let conversionResult = document.querySelector("[data-number-output]");
 
 function test() {
-    Event.preventDefault();
-    console.log(numberInput);
+    let numberFrom = parseInt(numberInput.value);
+    numberFrom /= 100;
+    conversionResult.value = numberFrom;
 }
 
-convertFrom.addEventListener("submit", test())
+convertFrom.addEventListener("submit", (e) => {
+    e.preventDefault();
+    test();
+})
