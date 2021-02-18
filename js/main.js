@@ -24,6 +24,18 @@ function converter() {
                     break;
             }
             break;
+        case "meter":
+            switch (outputMetric.value) { 
+                case "centimeter":
+                    inputValue *= 100;
+                    break;
+                case "meter":
+                    inputValue;
+                    break;
+                case "feet":
+                    inputValue *= 3.2808;
+                    break;
+            }
     }
     conversionResult.value = inputValue.toFixed(2);
 }
