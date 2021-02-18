@@ -1,22 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    background-color: aqua;
-    color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: goldenrod;
+  color: white;
 }
 
+.converterForms {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+
+.converterFrom div button,
+.converterTo div button {
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 15vw;
+}
+
+/*
 .navList {
     list-style: none;
     display: flex;
@@ -35,8 +54,4 @@ header {
     color:#fff;
     text-decoration: none;
 }
-
-.wrapper {
-    margin: 0 5vw;
-}
-
+*/

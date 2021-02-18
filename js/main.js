@@ -6,6 +6,7 @@ let numberInput = document.querySelector("[data-number-input]");
 let inputMetric = document.querySelector("[data-input-select]");
 let outputMetric = document.querySelector("[data-output-select]");
 let conversionResult = document.querySelector("[data-number-output]");
+let convertButton = document.querySelector("[data-conversion-button]");
 
 function converter() {
     let inputValue = parseInt(numberInput.value);
@@ -36,6 +37,20 @@ function converter() {
                     inputValue *= 3.2808;
                     break;
             }
+            break;
+        case "feet":
+            switch(outputMetric.value) {
+                case "centimeter":
+                    inputValue *= 30.48;
+                    break;
+                case "meter":
+                    inputValue /= 3.2808;
+                    break;
+                case "feet":
+                    inputValue;
+                    break;
+            }
+            break;
     }
     conversionResult.value = inputValue.toFixed(2);
 }
@@ -43,9 +58,4 @@ function converter() {
 convertFrom.addEventListener("submit", (e) => {
     e.preventDefault();
     converter();
-})
-
-convertTo.addEventListener("submit", (e) => {
-    e.preventDefault();
-    test();
 })
