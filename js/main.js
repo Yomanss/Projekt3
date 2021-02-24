@@ -55,7 +55,6 @@ function converter() {
     conversionResult.value = inputValue.toFixed(2);
 }
 
-convertFrom.addEventListener("submit", (e) => {
-    e.preventDefault();
+convertButton.addEventListener("click", (e) => {
     converter();
 })

@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <script defer src="./js/main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="js/main.js"></script>
     <title>Projekt 3</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Projekt 3</h1>
-        <nav>
-            <ul class="hamburger">
-                <li>
-                    <button type="button" onclick="Meny()">HEJ</button>
-                    <ul class="menyOn invisible">
-                        <li>
-                            <a href="#">Delsida 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Delsida 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Delsida 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Delsida 1</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+      <h1>Ahmed's Unit Converter</h1>
     </header>
-    <main></main>
-    <footer></footer>
-</body>
+    <main>
+      <div class="wrapper">
+        <h2>Welcome tom my unit converter!</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          praesentium fugit iste. Voluptatem nam deleniti, molestiae ipsam fugit
+          numquam eos minima totam officia nobis. Tempore aspernatur
+          reprehenderit illo nobis facere ipsa temporibus obcaecati laudantium
+          voluptate eligendi, eum voluptatem eveniet voluptates. Officiis
+          praesentium nam fugiat dignissimos nihil error neque officia ab iure!
+          Cum accusantium soluta optio quae eum! Repellat quis quae maiores
+          fugit, error magni, ullam molestias vitae dolorum voluptatum
+          repudiandae itaque minus cum iure quisquam blanditiis esse. Eveniet
+          est nemo excepturi, eligendi odit dolorum sunt labore veritatis
+          consequuntur, id distinctio? Harum sint architecto perspiciatis
+          commodi placeat tempore ducimus illo? Et ea ratione asperiores ad enim
+          ipsam atque quidem dolorum in qui, autem fugiat officiis corrupti ipsa
+          soluta quibusdam cum adipisci.
+        </p>
+        <div class="converterForms">
+          <div>
+            <form class="converterFrom" data-conversion-from>
+              <div>
+                <label>
+                  From:
+                  <input required min="0" type="number" data-number-input />
+                </label>
+                <select name="" id="" data-input-select>
+                  <option value="centimeter">Centimeter</option>
+                  <option value="meter">Meter</option>
+                  <option value="feet">Feet</option>
+                </select>
+              </div>
+            </form>
+            <form class="converterTo" data-conversion-to>
+              <div>
+                <label>
+                  To:
+                  <input required min="0" type="number" data-number-output />
+                </label>
+                <select name="" id="" data-output-select>
+                  <option value="centimeter">Centimeter</option>
+                  <option value="meter">Meter</option>
+                  <option value="feet">Feet</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div>
+            <button type="button" data-conversion-button>Convert</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <article>
+        <p>Unit Converter 3000, made by yours truly, Ahmed.</p>
+      </article>
+    </footer>
+  </body>
 </html>

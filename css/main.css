@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 header {
@@ -15,6 +15,14 @@ header {
   padding: 0.5rem 2rem;
   background-color: goldenrod;
   color: white;
+}
+
+h2 {
+  margin: 1rem 0 0 0;
+}
+
+.text {
+  margin: 0 0 2rem 0;
 }
 
 .converterForms {
@@ -28,11 +36,19 @@ header {
 .converterTo div button {
   border: none;
   margin: 0 auto;
+  font-size: 0.8rem;
   width: 100%;
 }
 
 .wrapper {
-  margin: 0 15vw;
+  margin: 0 10vw;
+}
+
+footer {
+ margin: ;
+  padding: 0.5rem 2rem;
+  background-color: goldenrod;
+  color: white;
 }
 
 /*
