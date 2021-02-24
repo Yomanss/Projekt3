@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --myOrange: #f4a261;
+  --myGreen: #2a9d8f;
+}
+
 html {
   font-size: 20px;
 }
@@ -13,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 2rem;
-  background-color: goldenrod;
+  background-color: var(--myOrange);
   color: white;
 }
 
@@ -25,49 +30,46 @@ h2 {
   margin: 0 0 2rem 0;
 }
 
-.converterForms {
+.unitConverter {
   display: flex;
   margin: auto;
+  flex-direction: column;
   justify-content: space-evenly;
   width: 50vw;
 }
 
-.converterFrom div button,
-.converterTo div button {
-  border: none;
-  margin: 0 auto;
-  font-size: 0.8rem;
-  width: 100%;
+.converterForms {
+  display: flex;
+  justify-content: space-between;
 }
+
+
+.converterForms label input, select{
+  height: 2em;
+  font-size: rem;
+}
+
+.converterButton {
+  margin: 0.5rem auto;
+}
+
+.converterButton button {
+  border: 1px solid black;
+  background-color: var(--myGreen);
+  color: white;
+  padding: 0.5em 2em;
+}
+
+
 
 .wrapper {
   margin: 0 10vw;
 }
 
 footer {
- margin: ;
+  margin: 1rem 0 0 0;
   padding: 0.5rem 2rem;
-  background-color: goldenrod;
+  background-color: var(--myOrange);
   color: white;
 }
 
-/*
-.navList {
-    list-style: none;
-    display: flex;
-}
-
-.navList li {
-    margin: 0.5rem;
-}
-
-.navList li:last-child {
-    margin-right: 1rem;
-}
-
-.navList li a{
-    font-size: 1.5rem;
-    color:#fff;
-    text-decoration: none;
-}
-*/
