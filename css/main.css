@@ -31,10 +31,20 @@ h2 {
 }
 
 .unitConverter {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.converterForms {
   display: flex;
   margin: auto;
   justify-content: space-evenly;
   width: 50vw;
+}
+
+.convertType {
+  
 }
 
 
@@ -56,6 +66,10 @@ form {
 
 .wrapper {
   margin: 0 10vw;
+}
+
+.invisible {
+  display: none;
 }
 
 footer {

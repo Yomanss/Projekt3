@@ -13,7 +13,7 @@
     </header>
     <main>
       <div class="wrapper">
-        <h2>Welcome tom my unit converter!</h2>
+        <h2>Welcome to my unit converter!</h2>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
           praesentium fugit iste. Voluptatem nam deleniti, molestiae ipsam fugit
@@ -31,6 +31,33 @@
           soluta quibusdam cum adipisci.
         </p>
         <div class="unitConverter">
+          <form class="conversionType" data-unit-type>
+            <div class="convertType">
+              <label>
+                <input
+                  type="radio"
+                  name="typeRadio"
+                  value="1"
+                  checked
+                />Length
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="typeRadio"
+                  value="2"
+                />Temperature
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="typeRadio"
+                  value="3"
+                />Speed
+              </label>
+            </div>
+          </form>
+          <div class="converterForms">
             <form class="converterFrom" data-conversion-from>
               <input
                 required
@@ -39,10 +66,12 @@
                 placeholder="Input"
                 data-number-input
               />
-              <select name="" id="" data-input-select>
-                <option value="centimeter">Centimeter</option>
-                <option value="meter">Meter</option>
-                <option value="feet">Feet</option>
+              <select data-input-select>
+                <option class="length" value="centimeter">Centimeter</option>
+                <option class="length" value="meter">Meter</option>
+                <option class="length" value="feet">Feet</option>
+                <option class="time invisible" value="second">Second</option>
+                <option class="time invisible" value="hour">Hour</option>
               </select>
             </form>
             <p class="formP">=</p>
@@ -53,13 +82,17 @@
                 type="number"
                 placeholder="Output"
                 data-number-output
+                readonly
               />
-              <select name="" id="" data-output-select>
-                <option value="centimeter">Centimeter</option>
-                <option value="meter">Meter</option>
-                <option value="feet">Feet</option>
+              <select data-output-select>
+                <option class="length" value="centimeter">Centimeter</option>
+                <option class="length" value="meter">Meter</option>
+                <option class="length" value="feet">Feet</option>
+                <option class="time invisible" value="second">Second</option>
+                <option class="time invisible" value="hour">Hour</option>
               </select>
             </form>
+          </div>
         </div>
       </div>
     </main>
