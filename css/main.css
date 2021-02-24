@@ -33,34 +33,26 @@ h2 {
 .unitConverter {
   display: flex;
   margin: auto;
-  flex-direction: column;
   justify-content: space-evenly;
   width: 50vw;
 }
 
-.converterForms {
+
+.formP {
+  font-size: 2.5rem;
+}
+
+form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 
-.converterForms label input, select{
+.unitConverter input, select{
   height: 2em;
-  font-size: rem;
+  font-size: 1rem;
+  text-align: center;
 }
-
-.converterButton {
-  margin: 0.5rem auto;
-}
-
-.converterButton button {
-  border: 1px solid black;
-  background-color: var(--myGreen);
-  color: white;
-  padding: 0.5em 2em;
-}
-
-
 
 .wrapper {
   margin: 0 10vw;
@@ -71,5 +63,11 @@ footer {
   padding: 0.5rem 2rem;
   background-color: var(--myOrange);
   color: white;
+}
+
+@media only screen and (max-width: 780px) {
+  .unitConverter {
+    width: 75vw;
+  }
 }
 

@@ -55,6 +55,6 @@ function converter() {
     conversionResult.value = inputValue.toFixed(2);
 }
 
-convertButton.addEventListener("click", (e) => {
-    converter();
-})
+numberInput.addEventListener("keyup",converter);
+inputMetric.addEventListener("change",converter);
+outputMetric.addEventListener("change",converter);
