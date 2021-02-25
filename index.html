@@ -33,28 +33,18 @@
         <div class="unitConverter">
           <form class="conversionType" data-unit-type>
             <div class="convertType">
-              <label>
-                <input
-                  type="radio"
-                  name="typeRadio"
-                  value="1"
-                  checked
-                />Length
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="typeRadio"
-                  value="2"
-                />Temperature
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="typeRadio"
-                  value="3"
-                />Speed
-              </label>
+              <input
+                type="radio"
+                name="typeRadio"
+                value="1"
+                id="radioLength"
+                checked
+              />
+              <label for="radioLength">Length</label>
+              <input type="radio" name="typeRadio" value="2" id="radioTemp" />
+              <label for="radioTemp">Temperature</label>
+              <input type="radio" name="typeRadio" value="3" id="radioSpeed" />
+              <label for="radioSpeed">Speed</label>
             </div>
           </form>
           <div class="converterForms">
@@ -78,7 +68,6 @@
                 <option class="speed invisible">miles/h</option>
               </select>
             </form>
-            <p class="formP">=</p>
             <form class="converterTo" data-conversion-to>
               <input
                 required
