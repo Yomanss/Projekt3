@@ -11,6 +11,7 @@
 
 html {
   font-size: 20px;
+  font-family: ;
 }
 
 header {
@@ -44,7 +45,11 @@ h2 {
 }
 
 .convertType {
-  
+  margin: 1em 0;
+}
+
+.convertType input[type="radio"] {
+  display:;
 }
 
 

@@ -44,12 +44,20 @@ function converterType() {
         for (let i = 0; i < typeLength.length; i++) {
             typeLength[i].classList.remove("invisible");
         }
+        typeTime[0].removeAttribute("selected");
+        typeTime[2].removeAttribute("selected");
+        typeLength[0].setAttribute("selected", true);
+        typeLength[3].setAttribute("selected", true);
     }
 
     if (radioValue === "2") {
         for (let i = 0; i < typeTime.length; i++) {
             typeTime[i].classList.remove("invisible");
-        }    
+        }
+        typeLength[0].removeAttribute("selected");
+        typeLength[3].removeAttribute("selected");
+        typeTime[0].setAttribute("selected", true);
+        typeTime[2].setAttribute("selected", true);
     }
 }
 
