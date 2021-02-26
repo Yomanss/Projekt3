@@ -52,36 +52,24 @@ function converterType() {
     for (let i = 0; i < typeLength.length; i++) {
       typeLength[i].classList.remove("invisible");
     }
-    typeTemp[0].removeAttribute("selected");
-    typeTemp[3].removeAttribute("selected");
-    typeSpeed[0].removeAttribute("selected");
-    typeSpeed[3].removeAttribute("selected");
-    typeLength[0].setAttribute("selected", true);
-    typeLength[3].setAttribute("selected", true);
+    inputMetric.value = typeLength[0].value;
+    outputMetric.value = typeLength[0].value;
   }
 
   if (radioValue === "2") {
     for (let i = 0; i < typeTemp.length; i++) {
       typeTemp[i].classList.remove("invisible");
     }
-    typeSpeed[0].removeAttribute("selected");
-    typeSpeed[3].removeAttribute("selected");
-    typeLength[0].removeAttribute("selected");
-    typeLength[3].removeAttribute("selected");
-    typeTemp[0].setAttribute("selected", true);
-    typeTemp[3].setAttribute("selected", true);
+    inputMetric.value = typeTemp[0].value;
+    outputMetric.value = typeTemp[0].value;
   }
 
   if (radioValue === "3") {
     for (let i = 0; i < typeSpeed.length; i++) {
       typeSpeed[i].classList.remove("invisible");
     }
-    typeTemp[0].removeAttribute("selected");
-    typeTemp[3].removeAttribute("selected");
-    typeLength[0].removeAttribute("selected");
-    typeLength[3].removeAttribute("selected");
-    typeSpeed[0].setAttribute("selected", true);
-    typeSpeed[3].setAttribute("selected", true);
+    inputMetric.value = typeSpeed[0].value;
+    outputMetric.value = typeSpeed[0].value;
   }
 }
 
