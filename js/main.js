@@ -13,6 +13,7 @@ let inputMetric = document.querySelector("[data-input-select]");
 let outputMetric = document.querySelector("[data-output-select]");
 
 unitType.addEventListener("change", converterType);
+unitType.addEventListener("change", converter);
 numberInput.addEventListener("keyup", converter);
 inputMetric.addEventListener("change", converter);
 outputMetric.addEventListener("change", converter);
@@ -200,21 +201,21 @@ function converter() {
       break;
     }
     case "miles/h": {
-        switch (outputMetric.value) {
-          case "m/s":
-            inputValue *= 1.6093;
-            inputValue *= 5;
-            inputValue /= 18;
-            break;
-          case "km/h":
-            inputValue *= 1.6093;
-            break;
-          case "miles/h":
-            inputValue;
-            break;
-        }
-        break;
+      switch (outputMetric.value) {
+        case "m/s":
+          inputValue *= 1.6093;
+          inputValue *= 5;
+          inputValue /= 18;
+          break;
+        case "km/h":
+          inputValue *= 1.6093;
+          break;
+        case "miles/h":
+          inputValue;
+          break;
       }
+      break;
+    }
   }
   numberOutput.value = inputValue.toFixed(2);
 }
