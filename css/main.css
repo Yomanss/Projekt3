@@ -6,8 +6,8 @@
 
 :root {
   --myOrange: #f4a261;
-  --myGreen: #224a5a;
-  --myDarkGrey: #2E3047;
+  --myDarkCyan: #1c5369;
+  --myDarkGrey: #1d1f29;
 }
 
 html {
@@ -96,7 +96,7 @@ body {
 }
 
 .convertType input[type="radio"]:checked + label {
-  background-color: var(--myGreen);
+  background-color: var(--myDarkCyan);
   border-color: black;
 }
 
