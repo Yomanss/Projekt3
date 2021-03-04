@@ -12,6 +12,7 @@
 
 html {
   font-size: 23px;
+  font-family: sans-serif, Arial;
 }
 
 header {
@@ -50,6 +51,23 @@ h2 {
   background-color: var(--myGreen);
 }
 
+.unitConverter input, select{
+  height: 2em;
+  min-width: 0;
+  background-color: rgba(199, 219, 206, 0.781);
+  color: white;
+  margin: 0 3.5vw;
+  border: none;
+  box-shadow: 0px 1px 4px 2px black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.unitConverter input {
+  border-bottom: 2px solid black;
+  border-radius: 10px 10px 0 0;
+}
+
 .convertType {
   margin: 1em 0 0 0;
 }
@@ -64,9 +82,8 @@ h2 {
   display: inline-block;
   background-color: var(--myGreen);
   padding: 0.5em 0.6em;
-  font-family: sans-serif, Arial;
   font-size: 1.2rem;
-  border: 2px solid #444;
+  border: 2px solid black;
   border-radius: 4px;
   margin: 0 0.4em;
 }
@@ -87,22 +104,6 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-}
-
-
-.unitConverter input, select{
-  height: 2em;
-  background-color: rgba(199, 219, 206, 0.781);
-  color: white;
-  border: none;
-  box-shadow: 0px 1px 4px 2px black;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.unitConverter input {
-  border-bottom: 2px solid black;
-  border-radius: 10px 10px 0 0;
 }
 
 ::placeholder {
@@ -145,9 +146,62 @@ footer {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1024px) {
+
   .unitConverter {
     width: 75vw;
   }
+  .converterForms {
+    flex-direction: column;
+  }
+
+  .unitConverter input, select{
+    margin: 0 0vw;
+    font-size: 1em;
+  }
+
+  .unitConverter select {
+    margin: 0 0 2em 0;
+  }
 }
 
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .wrapper {
+    margin: 0 0vw;
+  }
+
+  h2 {
+    margin: 3.5rem 0.8em 0 0.8em;
+  }
+
+  .text {
+    margin: 0 1em 2rem 1em;
+  }
+
+  .converterForms {
+    width: 90vw;
+  }
+
+  .convertType label {
+    font-size: 1rem;
+    margin: 0em;
+  }
+
+  .unitConverter {
+    width: 100vw;
+  }
+
+  .unitConverter input {
+    margin: 0em 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .converterForms {
+    width: 95vw;
+  }
+}

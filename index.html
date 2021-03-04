@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unit converter tool created by Ahmed Shanwar. This was made for a school project using JavaScript, HTML and CSS"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="js/main.js"></script>
     <title>Projekt 3</title>
@@ -46,11 +50,13 @@
               <input
                 required
                 min="0"
+                id="convertFrom"
                 type="number"
                 placeholder="Input"
                 data-number-input
+                aria-label="From: "
               />
-              <select data-input-select>
+              <select data-input-select aria-label="Convert from:">
                 <option class="length">Centimeter</option>
                 <option class="length">Meter</option>
                 <option class="length">Feet</option>
@@ -66,12 +72,14 @@
               <input
                 required
                 min="0"
+                id="convertTo"
                 type="number"
                 placeholder="Output"
                 data-number-output
                 readonly
+                aria-label="To: "
               />
-              <select data-output-select>
+              <select data-output-select aria-label="Convert To:">
                 <option class="length">Centimeter</option>
                 <option class="length">Meter</option>
                 <option class="length">Feet</option>
