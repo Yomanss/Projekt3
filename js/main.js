@@ -12,6 +12,8 @@ let numberOutput = document.querySelector("[data-number-output]");
 let inputMetric = document.querySelector("[data-input-select]");
 let outputMetric = document.querySelector("[data-output-select]");
 
+outputMetric.value = typeLength[1].value; 
+
 unitType.addEventListener("change", converterType);
 unitType.addEventListener("change", converter);
 numberInput.addEventListener("keyup", converter);
@@ -54,7 +56,7 @@ function converterType() {
       typeLength[i].classList.remove("invisible");
     }
     inputMetric.value = typeLength[0].value;
-    outputMetric.value = typeLength[0].value;
+    outputMetric.value = typeLength[1].value;
   }
 
   if (radioValue === "2") {
@@ -62,7 +64,7 @@ function converterType() {
       typeTemp[i].classList.remove("invisible");
     }
     inputMetric.value = typeTemp[0].value;
-    outputMetric.value = typeTemp[0].value;
+    outputMetric.value = typeTemp[1].value;
   }
 
   if (radioValue === "3") {
@@ -70,7 +72,7 @@ function converterType() {
       typeSpeed[i].classList.remove("invisible");
     }
     inputMetric.value = typeSpeed[0].value;
-    outputMetric.value = typeSpeed[0].value;
+    outputMetric.value = typeSpeed[1].value;
   }
 }
 
