@@ -21,10 +21,9 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 2px solid rgba(17, 179, 179, 0.884) ;
+  border-bottom: 2px solid rgba(17, 179, 179, 0.884);
   box-shadow: 1px 1px 10px black;
   background-color: var(--myDarkGrey);
-
 }
 
 h2 {
@@ -40,11 +39,10 @@ body {
 }
 
 .unitConverter {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0 0 12rem 0;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 12rem 0;
 }
 
 .converterForms {
@@ -58,7 +56,8 @@ body {
   background-color: var(--myDarkGrey);
 }
 
-.unitConverter input, select{
+.unitConverter input,
+select {
   height: 2em;
   min-width: 0;
   background-color: var(--myDarkGrey);
@@ -71,6 +70,7 @@ body {
 }
 
 .unitConverter input {
+  background-color: #262a3f;
   border-bottom: 2px solid black;
   border-radius: 10px 10px 0 0;
 }
@@ -154,7 +154,6 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-
   .unitConverter {
     width: 75vw;
   }
@@ -162,7 +161,8 @@ footer {
     flex-direction: column;
   }
 
-  .unitConverter input, select{
+  .unitConverter input,
+  select {
     margin: 0 0vw;
     font-size: 1em;
   }
@@ -176,7 +176,7 @@ footer {
   html {
     font-size: 16px;
   }
-  
+
   .wrapper {
     margin: 0 0vw;
   }
