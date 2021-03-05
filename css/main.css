@@ -164,7 +164,6 @@ footer {
   .unitConverter input,
   select {
     margin: 0 0vw;
-    font-size: 1em;
   }
 
   .unitConverter select {
